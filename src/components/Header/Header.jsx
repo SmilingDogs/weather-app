@@ -15,6 +15,15 @@ function Header({ getWeatherData }) {
     getWeatherData("forecast", city);
   }, [city, getWeatherData]);
 
+  const handleKeyDown = useCallback(
+    (event) => {
+      if (event.key === "Enter") {
+        handleClick();
+      }
+    },
+    [handleClick]
+  );
+
   return (
     <header className={styles.inputContainer}>
       <input
@@ -23,6 +32,7 @@ function Header({ getWeatherData }) {
         type="text"
         name="city"
         onChange={handleChange}
+        onKeyDown={handleKeyDown}
         value={city}
       />
       <button className={styles.searchBtn} onClick={handleClick}>
