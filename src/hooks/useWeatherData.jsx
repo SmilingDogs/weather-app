@@ -8,9 +8,8 @@ function useWeatherData() {
   const [error, setError] = useState(null);
 
   async function getWeatherData(endPoint, city) {
-    const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/${endPoint}?q=${city}&appid=${config.apiKey}&units=metric`
-    );
+    const apiURL = `https://api.openweathermap.org/data/2.5/${endPoint}?q=${city}&appid=${config.apiKey}&units=metric`;
+    const response = await fetch(apiURL);
     const data = await response.json();
 
     if (data.cod == 200) {
