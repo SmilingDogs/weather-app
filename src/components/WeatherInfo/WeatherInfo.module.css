@@ -1,0 +1,68 @@
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.locationDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.weatherSummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weatherSummaryImg {
+  width: 120px;
+  height: 120px;
+}
+
+.weatherSummaryInfo {
+  text-align: end;
+}
+
+.weatherConditions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.conditionItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.conditionItem span {
+  font-size: 30px;
+}
+
+.forecastItems {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  padding-bottom: 12px;
+}
+
+.forecastItems::-webkit-scrollbar {
+  height: 8px;
+}
+
+.forecastItems::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0, 0.1);
+  border-radius: 99px;
+}
+
+.forecastItems::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0, 0.15);
+  border-radius: 99px;
+}

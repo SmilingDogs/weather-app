@@ -1,0 +1,24 @@
+.forecastItem {
+  min-width: 70px;
+  background: rgb(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 12px;
+  transition: 0.3s background;
+}
+
+.forecastItem:hover {
+  background: rgb(255, 255, 255, 0.15);
+}
+
+.regularTxt {
+  font-weight: 400;
+}
+
+.forecastItemImg {
+  width: 35px;
+  height: 35px;
+}
