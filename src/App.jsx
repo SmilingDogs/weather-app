@@ -6,8 +6,14 @@ import Container from "./components/Container/Container";
 import useWeatherData from "./hooks/useWeatherData";
 
 function App() {
-  const [weatherData, forecastData, isShowSearch, error, getWeatherData] =
-    useWeatherData();
+  const [
+    weatherData,
+    forecastData,
+    isShowSearch,
+    error,
+    isLoading,
+    getWeatherData,
+  ] = useWeatherData();
 
   return (
     <Container>
@@ -16,6 +22,7 @@ function App() {
         weatherData={weatherData}
         forecastData={forecastData}
         error={error}
+        isLoading={isLoading}
       />
       <SearchCity isShowSearch={isShowSearch} />
       <NotFound error={error} />

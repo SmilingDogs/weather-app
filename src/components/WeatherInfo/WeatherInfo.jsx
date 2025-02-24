@@ -6,7 +6,7 @@ import ForecastItem from "../ForecastItem/ForecastItem";
 import styles from "./WeatherInfo.module.css";
 import otherStyles from "../ForecastItem/ForecastItem.module.css";
 
-function WeatherInfo({ weatherData, forecastData, error }) {
+function WeatherInfo({ weatherData, forecastData, error, isLoading }) {
   const weatherIconSelect = useCallback((status) => {
     switch (status) {
       case "Thunderstorm":
@@ -27,6 +27,10 @@ function WeatherInfo({ weatherData, forecastData, error }) {
   }, []);
 
   if (!weatherData || !forecastData || error) {
+    return null;
+  }
+
+  if (isLoading) {
     return null;
   }
 
@@ -113,6 +117,7 @@ WeatherInfo.propTypes = {
   weatherData: PropTypes.object.isRequired,
   forecastData: PropTypes.object.isRequired,
   error: PropTypes.string.isRequired,
+  isLoading: PropTypes.bool.isRequired,
 };
 
 export default WeatherInfo;
