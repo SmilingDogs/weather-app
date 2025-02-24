@@ -18,14 +18,14 @@ function App() {
   return (
     <Container>
       <Header getWeatherData={getWeatherData} />
+      <SearchCity isShowSearch={isShowSearch} />
+      <NotFound error={error} />
       <WeatherInfo
         weatherData={weatherData}
         forecastData={forecastData}
         error={error}
         isLoading={isLoading}
       />
-      <SearchCity isShowSearch={isShowSearch} />
-      <NotFound error={error} />
     </Container>
   );
 }
