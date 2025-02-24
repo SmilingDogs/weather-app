@@ -1,5 +1,4 @@
-This weather app makes calls to OpenWeatherMap's website API to get current weather and forecasts for the city
-provided by a user.
+This weather app makes calls to OpenWeatherMap website's API to get current weather and forecasts for the city provided by a user.
 
 If you want to test it, you must create an account on the OpenWeathermap
 and obtain the personal API key.
