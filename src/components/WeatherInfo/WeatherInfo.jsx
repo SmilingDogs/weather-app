@@ -1,5 +1,6 @@
 // prettier-ignore
-import {clouds, thunderstorm, drizzle, rain, snow, clear, atmosphere} from "../../assets/weather";
+import {thunderstorm, drizzle, atmosphere} from "../../assets/weather";
+import { clear, cloud, rain, snow } from "../../assets/new-icons";
 import PropTypes from "prop-types";
 import { useCallback } from "react";
 import ForecastItem from "../ForecastItem/ForecastItem";
@@ -20,7 +21,7 @@ function WeatherInfo({ weatherData, forecastData, error, isLoading }) {
       case "Clear":
         return clear;
       case "Clouds":
-        return clouds;
+        return cloud;
       default:
         return atmosphere;
     }

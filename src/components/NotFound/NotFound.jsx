@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import notFound from "../../assets/message/not-found.png";
+import notFound from "../../assets/new-icons/404.png";
 import styles from "../ForecastItem/ForecastItem.module.css";
 import otherStyles from "../SearchCity/SearchCity.module.css";
 

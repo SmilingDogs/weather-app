@@ -24,7 +24,7 @@
 
 .weatherSummaryImg {
   width: 120px;
-  height: 120px;
+  height: 90px;
 }
 
 .weatherSummaryInfo {
@@ -51,18 +51,26 @@
   gap: 15px;
   overflow-x: scroll;
   padding-bottom: 12px;
+  width: 100%;
 }
 
 .forecastItems::-webkit-scrollbar {
-  height: 8px;
+  height: 10px;
 }
 
 .forecastItems::-webkit-scrollbar-track {
-  background: rgb(0, 0, 0, 0.1);
+  background: rgb(0, 0, 0, 0.3);
   border-radius: 99px;
 }
 
 .forecastItems::-webkit-scrollbar-thumb {
-  background: rgb(0, 0, 0, 0.15);
+  background: rgba(73, 70, 70, 0.5);
   border-radius: 99px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.forecastItems::-webkit-scrollbar-thumb:hover {
+  background: rgba(134, 129, 129, 0.5);
+  border-radius: 99px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
 }
